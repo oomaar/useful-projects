@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary: blue;
+  --bg-color: #f7ede5;
+  --button-color: white;
+  --test: red;
+  --item-bg-color: white;
+}
+
+[data-theme="dark"] {
+  --primary: #bb85fc;
+  --bg-color: rgb(61, 60, 60);
+  --button-color: white;
+  --test: yellow;
+  --item-bg-color: black;
+}
+*,
+*::after,
+*::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+  cursor: default;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary);
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--button-color);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+button:active,
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.input__container {
+  border-radius: 25px !important;
+  padding: 8px 12px;
+  margin-top: 20px;
+  width: 20%;
+  min-width: 120px;
+  border: 2px solid var(--primary);
+  margin: 20px auto;
+}
+
+.input__container input {
+  width: 100%;
+  border: none;
+
+  color: var(--primary);
+  background-color: var(--item-bg-color);
+}
+.input__container input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--primary);
+}
